@@ -52,8 +52,9 @@ export class AuthService {
 
   async loginByGoogle(){
 
-    const val=this.account.createOAuth2Session('google', "http://localhost:5173/","http://localhost:5173/signup")
-    console.log(val)
+    
+    this.account.createOAuth2Session('google', "http://localhost:5173/","http://localhost:5173/signup")
+    
   }
 
   //login by github
