@@ -53,7 +53,7 @@ export class Service{
             )     
         }
         catch(error){
-            console.log("Appwrite Service :: updataPost :: error",error)
+            // console.log("Appwrite Service :: updataPost :: error",error)
         }
     }
     //delete document
@@ -67,7 +67,7 @@ export class Service{
             )
             return true;
         } catch (error) {
-            console.log("appwrite:service::deletePost::error",error)
+            // console.log("appwrite:service::deletePost::error",error)
             return false;
         }
     }
@@ -98,7 +98,7 @@ export class Service{
             )
         }
         catch(error){
-            console.log("appwrite service :: getPosts :: error",error)
+            // console.log("appwrite service :: getPosts :: error",error)
             
         }
     }
