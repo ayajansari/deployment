@@ -20,7 +20,7 @@ function LogoutBtn({
             })
         }
         catch(error){
-            console.log("error",error.message)
+            // console.log("error",error.message)
             throw error
         }
     }
