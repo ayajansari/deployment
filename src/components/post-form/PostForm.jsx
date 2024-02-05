@@ -23,7 +23,7 @@ export default function PostForm({ post }) {
     const navigate = useNavigate();
     const userData = useSelector((state) => state.auth.userData);
     // console.log(userData)
-    console.log("user id:",userData["$id"])
+    // console.log("user id:",userData["$id"])
     
     const submit = async (data) => {    //data is the entire data of form 
 
@@ -33,7 +33,7 @@ export default function PostForm({ post }) {
             if (file) {
                 appwriteService.deleteFile(post.featuredImage); //delete previous image
             }
-            console.log("post id:",data)
+            // console.log("post id:",data)
             const dbPost = await appwriteService.updatePost(post.$id, {
                 ...data,
                 featuredImage: file ? file.$id : undefined,
