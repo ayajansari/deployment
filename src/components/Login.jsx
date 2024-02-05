@@ -31,7 +31,7 @@ function Login(){
                 const userData=await authService.getCurrentUser()
                
                 if(userData){
-                    console.log(userData.$id)
+                    // console.log(userData.$id)
                     dispatch(authLogin(userData))
                     navigate("/")
                 }
