@@ -12,7 +12,7 @@ export default function Protected({children}){
     // const [loader,setLoader]=useState(true)
     const authStatus=useSelector((state)=>state.auth.status)
     
-    console.log(authStatus)
+    // console.log(authStatus)
 
     useEffect(()=>{
         if(!authStatus){
