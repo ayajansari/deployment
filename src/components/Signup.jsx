@@ -24,12 +24,12 @@ function Signup(){
         setError("")
         try {
             const userData=await authService.createAccount(data)
-            console.log("data after account creation:",userData)
+            // console.log("data after account creation:",userData)
             
             if(userData){
                
                 const userData1=await authService.getCurrentUser()
-                console.log("data after getCurrentUser :",userData1)
+                // console.log("data after getCurrentUser :",userData1)
 
                 if(userData1){
                     
