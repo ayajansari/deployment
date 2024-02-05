@@ -30,7 +30,7 @@ export class AuthService {
         } 
     }
     catch(error){
-      console.log("user singup unsuccessfull")
+      // console.log("user singup unsuccessfull")
       throw error;
     }
   }
