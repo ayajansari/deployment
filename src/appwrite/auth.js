@@ -53,14 +53,14 @@ export class AuthService {
   async loginByGoogle(){
 
     
-    this.account.createOAuth2Session('google', "https://deployment-2.vercel.app/","https://deployment-2.vercel.app/signup")
+    this.account.createOAuth2Session('google', "https://deployment-2.vercel.app","https://deployment-2.vercel.app/signup")
     
   }
 
   //login by github
   async loginByGithub(){
 
-    this.account.createOAuth2Session('github', "https://deployment-2.vercel.app/","https://deployment-2.vercel.app/signup")
+    this.account.createOAuth2Session('github', "https://deployment-2.vercel.app","https://deployment-2.vercel.app/signup")
   
   }
 
